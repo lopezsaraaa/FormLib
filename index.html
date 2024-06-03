@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <main>
+      <h1>El dragon de las estrellas y yo</h1>
+      <h3>formulario</h3>
+      <form action="" class="formulario" id="formulario">
+
+        <!-- Grupo: Nombre -->
+        <div class="formulario__grupo" id="grupo__nombre">
+          <label for="nombre" class="formulario__label">Nombre</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Sin numeros">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El nombre solo puede contener letras y espacios.</p>
+        </div>
+
+        <!-- Grupo: Edad -->
+        <div class="formulario__grupo" id="grupo__edad">
+          <label for="edad" class="formulario__label">Edad:</label>
+          <div class="formulario__grupo-input">
+            <input type="number" class="formulario__input" name="edad" id="edad" placeholder="Sin letras">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">La edad debe ser un número entre 1 y 3 dígitos.</p>
+        </div>
+
+        <!-- Grupo: Sexo -->
+        <div class="formulario__grupo" id="grupo__sexo">
+          <label for="sexo" class="formulario__label">Sexo:</label>
+          <div class="formulario__grupo-input">
+            <select class="formulario__input" name="sexo" id="sexo">
+              <option value="">Selecciona una opción</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+              <option value="Otro">Otro</option>
+            </select>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Selecciona una opción.</p>
+        </div>
+
+        <!-- Grupo: Comentarios -->
+        <div class="formulario__grupo" id="grupo__comentarios">
+          <label for="comentarios" class="formulario__label">Comentarios:</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="comentarios" id="comentarios" required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Los comentarios solo pueden contener letras y espacios.</p>
+        </div>
+
+        <!-- Grupo: Recomendaciones -->
+        <div class="formulario__grupo" id="grupo__recomendaciones">
+          <label for="recomendaciones" class="formulario__label">Recomendaciones:</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="recomendaciones" id="recomendaciones" required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Las recomendaciones solo pueden contener letras y espacios.</p>
+        </div>
+
+        <!-- Grupo: Correo Electrónico -->
+        <div class="formulario__grupo formulario__grupo-2col" id="grupo__correo">
+          <label for="correo" class="formulario__label">Correo Electrónico</label>
+          <div class="formulario__grupo-input">
+            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="@.com">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y guion bajo.</p>
+        </div>
+
+        <!-- Grupo: Términos y Condiciones -->
+        <div class="formulario__grupo" id="grupo__terminos">
+          <label class="formulario__label">
+            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+            Acepto los Términos y Condiciones
+          </label>
+        </div>
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+        </div>
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+          <button type="submit" class="formulario__btn">Enviar</button>
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+        </div>
+      </form>
+    </main>
+    <table>
+        <tr>
+          <td><img src="img/ElarbolL.jpg" width="200" height="250"></td>
+          <td><img src="img/JardinM.jpg" width="200" height="250"></td>
+          <td><img src="img/ElEspacioL.jpg" width="200" height="250"></td>
+          <td><img src="img/BajolamismaestrellaL.jpg" width="200" height="250"></td>
+          <td><img src="img/DDD.jpg" width="200" height="250"></td>
+        </tr>
+    </table>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
